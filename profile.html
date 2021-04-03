@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MamaFood</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="././plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="././dist/css/adminlte.min.css">
+</head>
+
+<body class="hold-transition sidebar-mini">
+  <div class="wrapper">
+    <!-- Navbar -->
+
+    <!-- /.navbar -->
+
+
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1>Profil</h1>
+            </div>
+          </div>
+        </div><!-- /.container-fluid -->
+      </section>
+
+      <!-- Main content -->
+      <section class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-3">
+
+              <!-- Profile Image -->
+              <div class="card card-primary card-outline">
+                <div class="card-body box-profile">
+                  <div class="text-center">
+                    <img class="profile-user-img img-fluid img-circle" src="././dist/img/user4-128x128.jpg"
+                      alt="User profile picture">
+                  </div>
+
+                  <h3 class="profile-username text-center">CHOUMICHA Soukaina</h3>
+
+                  <p class="text-muted text-center">specialité maghrébin</p>
+
+                  <ul class="list-group list-group-unbordered mb-3">
+                    <li class="list-group-item">
+                      <b>CHOUMICHA</b> <a class="float-right"><i class="fas fa-pencil-alt mr-1"></i></a>
+                    </li>
+                    <li class="list-group-item">
+                      <b>Soukaina</b> <a class="float-right"><i class="fas fa-pencil-alt mr-1"></i></a>
+                    </li>
+                    <li class="list-group-item">
+                      <b>0612847614</b> <a class="float-right"><i class="fas fa-pencil-alt mr-1"></i></a>
+                    </li>
+                    <li class="list-group-item">
+                      <b>choumicha@maghrebin.com</b> <a class="float-right"><i class="fas fa-pencil-alt mr-1"></i></a>
+                    </li>
+                  </ul>
+
+                  <a href="#information" class="btn btn-block btn-primary"><b>Modifier profile</b></a>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+
+              <!-- About Me Box -->
+              <div class="card card-primary">
+                <div class="card-header">
+                  <h3 class="card-title">À propos de moi</h3>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+
+                  <strong><i class="fas fa-map-marker-alt mr-1"></i> Adresse <a class="float-right">
+                      <i class="fas fa-pencil-alt mr-1"></i></a></strong>
+                  <hr>
+                  <strong><i class="fas fa-book mr-1"></i> Coordonnées Bancaires <a class="float-right">
+                      <i class="fas fa-pencil-alt mr-1"></i></a></strong>
+                  <hr>
+
+                </div>
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-9">
+              <div class="card">
+                <div class="card-header p-3">
+                  <ul class="nav nav-pills">
+                    <li class="nav-item"><a class="nav-link active" href="#information" data-toggle="tab">Mes
+                        Informations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#adresse" data-toggle="tab">Adresse</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#coordonnées_bancaires" data-toggle="tab">Coordonnées
+                        Bancaires</a></li>
+                    
+                  </ul>
+                </div><!-- /.card-header -->
+                <div class="card-body">
+                  <div class="tab-content">
+                    <div class="active tab-pane" id="information">
+                      <!-- Post -->
+                      <div class="card card-primary">
+                        <div class="card-header">
+                          <h3 class="card-title">Mes Informations</h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <!-- form start -->
+                        <form>
+                          <div class="card-body">
+                            <div class="form-group">
+                              <label for="exampleInputNom">Nom</label>
+                              <input type="email" class="form-control" id="exampleInputNom"
+                                placeholder="Entrer votre nom">
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputPrénom">Prénom</label>
+                              <input type="email" class="form-control" id="exampleInputPrénom"
+                                placeholder="Entrer votre prénom">
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputNaissance">Date de Naissance</label>
+                              <div class="input-group">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                                  </div>
+                                  <input type="text" class="form-control" placeholder="jj/mm/aaaa"
+                                    data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask
+                                    im-insert="false">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputTelephone">Numéro Télephone</label>
+                              <input type="email" class="form-control" id="exampleInputTelephone"
+                                placeholder="Entrer votre numéro téléphone ">
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputEmail">Adresse Email</label>
+                              <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                </div>
+                                <input type="email" class="form-control" placeholder="Email">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputSpecialite">Spécialité</label>
+                              <input type="text" class="form-control" id="exampleInputSpecialite"
+                                placeholder="Entrer votre Spécialité ">
+                            </div>
+                          </div>
+                          <!-- /.card-body -->
+
+                          <div class="card-footer">
+                            <button type="submit" class="btn btn-block btn-primary">Enregistrer vous informations</button>
+                          </div>
+                          
+                        </form>
+                      </div>
+                      <!-- /.post -->
+                    </div>
+
+                    <!-- /.tab-pane -->
+                    
+
+                       <div class="active tab-pane" id="adresse">
+                      <!-- Post -->
+                      <div class="card card-primary">
+                        <div class="card-header">
+                          <h3 class="card-title">Adresse</h3>
+                        </div>
+
+                        <!-- The timeline -->
+                        <form>
+                          <div class="card-body">
+                            <div class="form-group">
+                              <label for="inputAdresse">Adresse</label>
+                              <input type="text" class="form-control" id="inputAdresse2"
+                                placeholder="123 avenue du  Main ">
+                            </div>
+                            <div class="form-group">
+                              <label for="inputAdresse2">Adresse 2</label>
+                              <input type="text" class="form-control" id="inputAdresse2"
+                                placeholder="Apartment, studio">
+                            </div>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputCity">Ville</label>
+                                <input type="text" class="form-control" id="inputCity" placeholder="Paris, Rome">
+                              </div>
+                              <div class="form-group col-md-4">
+                                <label for="inputpays">Pays</label>
+                                <input type="text" class="form-control" id="inputpays" placeholder="France, Italie">
+                                <!-- <select id="inputState" class="form-control">
+                              <option selected>Choisir</option>
+                              <option></option>
+                            </select> -->
+                              </div>
+                              <div class="form-group col-md-2">
+                                <label for="inputcodepostal">Code postal</label>
+                                <input type="text" class="form-control" id="inputcodepostal">
+                              </div>
+                            </div>
+
+                          </div>
+                          <div class="card-footer">
+                            <button type="submit" class="btn btn-block btn-primary">Ajouter</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+
+                    <!-- /.tab-pane -->
+
+                    <div class="tab-pane" id="coordonnées_bancaires">
+                      <div class="card card-primary">
+                        <div class="card-header">
+                          <h3 class="card-title">coordonnées Bancaires</h3>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-lg-6 mx-auto">
+                            <div class="card ">
+                              <div class="card-header">
+                                <div class="bg-white shadow-sm pt-4 pl-2 pr-2 pb-2">
+                                  <!-- Credit card form tabs -->
+                                  <ul role="tablist" class="nav bg-light nav-pills rounded nav-fill mb-3">
+                                    <li class="nav-item"> <a data-toggle="pill" 
+                                        class="nav-link active "><i class="fas fa-university"></i> Compte Bancaire
+                                      </a> </li>
+                                    <!-- <li class="nav-item"> <a data-toggle="pill" href="#paypal" class="nav-link "> <i class="fab fa-paypal mr-2"></i> Paypal </a> </li>
+                                            <li class="nav-item"> <a data-toggle="pill" href="#net-banking" class="nav-link "> <i class="fas fa-mobile-alt mr-2"></i> Net Banking </a> </li> -->
+                                  </ul>
+                                </div> <!-- End -->
+                                <!-- Credit card form content -->
+                                <div class="tab-content">
+                                  <!-- credit card info-->
+                                  <div id="credit-card" class="tab-pane fade show active pt-3">
+                                    <form role="form">
+                                      <div class="form-group"> <label for="username">
+                                          <h6>Nom de la Banque </h6>
+                                        </label> <input type="text" name="username"
+                                          placeholder=" entrer le Nom de votre banque" required class="form-control "
+                                          required>
+                                      </div>
+
+                                      <div class="form-group"> <label for="username">
+                                        <h6>Titulaire de Compte </h6>
+                                      </label> <input type="text" name="username"
+                                        placeholder="Nom du propriétaire de compte" required class="form-control "
+                                        required>
+                                    </div>
+                                      
+
+                                      <div class="form-group"> <label for="cardNumber">
+                                          <h6>IBan</h6>
+                                        </label>
+                                        <div class="input-group"> <input type="text" name="cardNumber"
+                                            placeholder="____ ____ ____ ____ ____ ____" class="form-control " required>
+                                        </div>
+                                      </div>
+                                      
+                                        
+                                      
+                                      <div class="card-footer"> <button type="button"
+                                          class="subscribe btn btn-primary btn-block shadow-sm"> Enregister votre Compte
+                                        </button>
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                              
+                              <!-- /.tab-pane -->
+                            
+                              <!-- /.tab-content -->
+                              <!-- /.card-body -->
+
+                              <!-- /.card -->
+
+                              <!-- /.col -->
+
+                              <!-- /.row -->
+                              <!-- /.container-fluid -->
+      </section>
+    </div>
+  </div>
+  <!-- /.content -->
+  </div>
+  
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+    </div>
+    <strong>Copyright &copy;2020-2021 <a href="#">MamaFood</a>.</strong> All rights reserved.
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery -->
+  <script src="././plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="././plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="././dist/js/adminlte.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="././dist/js/demo.js"></script>
+</body>
+
+</html>
